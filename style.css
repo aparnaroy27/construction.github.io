@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.text-black{
+    color: black;
+}
+.text-light{
+    color: white;
+}
+.text-red{
+    color: red;
+}
+.text-grey{
+    color: grey;
+}
+.btn{
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    border-radius: 10rem;
+    background-color: white;
+}
+.btn-secondary{
+    border: 2px solid red;
+    border-radius: 1.5em;
+    background-color: white;
+}
+.container5{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    height: 95vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../IMG/106811484-1608045351058-gettyimages-1126750618-dsc_1540.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    animation: change-bg 20s infinite ease-in-out;
+
+}
+@keyframes change-bg{
+    0%{
+        background-image: url(../IMG/stock-photo-the-construction-site.jpg);
+    }
+    25%{
+        background-image: url(../IMG/ghaziabad-uttar-pradesh-homes-photos-1366x768.webp);
+    }
+    50%{
+        background-image: url(../IMG/depositphotos_1620238-stock-photo-crane-near-building.jpg);
+    } 
+    75%{
+        background-image: url(../IMG/civil-engineer-construction-worker-manager-holding-digital-tablet-blueprints-talking-planing-about-construction-site-cooperation-teamwork-concept_640221-156.avif);
+    }
+    100%{
+        background-image: url(../IMG/Blog-Hero.webp);
+    }
+}
+.navbar{
+    padding: 2rem;
+}
+.navbar .logo{
+    float: left;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+}
+.navbar a{
+    padding: 0.3rem;
+}
+.navbar a:link,
+.navbar a:visited{
+    color: white;
+}
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
+.navbar::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+/* ################################ Header Content Styling ######################################################## */
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+}
+.header-content h1{
+    text-transform: uppercase;
+}
+.header-content p{
+    margin-top: 1.5em;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+/* #################################### showcase section styling ###################################################### */
+.showcase{
+    background: #ddd;
+    padding: 5rem 0;
+}
+.row{
+    /* border: 2px solid red; */
+    padding: 0 1rem;
+}
+.row .row1{
+    /* border: 2px solid green; */
+    float: left;
+    width: 65%;
+    /* padding: 0 1rem; */
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.737);
+}
+.row .row1 img{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.row .row2{
+    float: right;
+    width: 33%;
+    /* padding: 0 2rem; */
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.row .row2 h1{
+    font-size: 6.5rem;
+}
+.row .row2 p{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+/* ################################ feature Section styling ##################################################### */
+
+.feature{
+    padding: 5rem 0;
+    background: black;
+    text-align: center;
+    height: 935px;
+}
+.head h1{
+    color: white;
+    font-size: 6.5rem;
+    text-transform: uppercase;
+}
+.head p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.box{
+    height: 350px;
+    margin-top: 6rem;
+}
+.box .box1{
+    /* border: 2px solid green; */
+    width: 33.33%;
+    float: left;
+    height: 100%;
+}
+.box .box2{
+    /* border: 2px solid red; */
+    width: 33.33%;
+    float: left;
+    height: 100%;
+}
+.box .box3{
+    /* border: 2px solid blue; */
+    width: 33.33%;
+    float: left;
+    height: 100%;
+}
+.box .box4{
+    /* border: 2px solid yellow; */
+    width: 33.33%;
+    float: left;
+    height: 100%;
+}
+.box .box5{
+    /* border: 2px solid orange; */
+    width: 33.33%;
+    float: left;
+    height: 100%;
+}
+.box .box6{
+    /* border: 2px solid greenyellow; */
+    width: 33.33%;
+    float: left;
+    height: 100%;
+}
+.box img{
+     display: inline-block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     padding: 0.5em;
+}
+/* ############################### box-wrapper styling ######################################################### */
+.box-wrapper{
+    padding: 3rem 0;
+    background: #ddd;
+}
+.box-wrapper .wrap{
+    /* border: 2px solid red; */
+    height: 250px;
+    text-align: center;
+    background: black;
+    padding: 3rem 0;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.477);
+}
+.wrap .wrap1{
+    /* border: 2px solid green; */
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+.wrap .wrap2{
+    /* border: 2px solid blue; */
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+.wrap .wrap2 i{
+    margin: 2rem;
+}
+.wrap .wrap3{
+    /* border: 2px solid black; */
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+.wrap .wrap3 i{
+    margin: 2rem;
+}
+.wrap .wrap1 p{
+    margin-bottom: 1rem;
+}
+.footer{
+    background: rgb(52, 50, 50);
+    padding: 3rem 0;
+    text-align: center;
+    height: 100px;
+}
+/* ######################################### Firm styling #################################################################### */
+.bg-theme{
+    background: black;
+}
+.firm-header{
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../IMG/modern-homes-town-houses-600nw-2195504819.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}    
+.firm-header h1{
+    text-transform: uppercase;
+    font-size: 7.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 1.3em;
+}
+.firm-header p{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.header-para{
+    text-align: center;
+    padding: 3rem;
+    background: rgb(252, 241, 241);
+    height: 200px;
+}
+.header-para p{
+    font-size: 2rem;
+    padding-top: 1.5em;
+    font-weight: 500;
+}
+.firm-section{
+    padding: 5rem 0;
+    text-align: center;
+    height: 450px;  
+}
+.firm-section .box-left{
+    /* border: 2px solid red; */
+    float: left;
+    width: 50%;
+    padding: 4rem;    
+}
+.firm-section .box-left h1{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.firm-section .box-left p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.firm-section .box-right{
+    /* border: 2px solid green; */
+    float: right;
+    width: 50%;      
+}
+/* ################################# Last Firm Styling ##################################################### */
+.last-firm{
+    padding: 5rem 0;
+}
+.last-stem{
+    /* border: 2px solid red; */
+    height: 900px;
+}
+
+.last-firm .m-heading{
+     /* border: 2px solid red; */
+     text-align: center;
+     font-size: 4.5rem;
+     text-transform: uppercase;
+     font-weight: 900;
+     background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+     margin-bottom: 3rem;
+}
+.last-firm .md-section{
+    float: left;
+    width: 45%;
+    text-align: center;
+    /* border: 2px solid green; */
+    overflow: hidden;
+    transition: transform 2s ease-in-out;
+}
+.last-firm .md-section1{
+    float: right;
+    width: 45%;
+    text-align: center;
+    /* border: 2px solid blue;*/
+    overflow: hidden;
+    transition: transform 2s ease-in-out;
+}
+.last-firm img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+.last-firm .line{
+    text-align: start;
+    color: gray;
+    padding-left: 4rem;
+    font-weight: 500;
+}
+.md-section:hover{
+    transform: scale(1.2);
+    
+}
+.md-section1:hover{
+    transform: scale(1.2); 
+}
+/* ########################################## Portolio styling ############################################ */
+.firm-header1{
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../IMG/image-4-8-1024x640.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.box1{
+    /* border:2px solid red;  */
+    position: relative;
+    
+}
+.box img{
+    display: block;
+    width: 100%;
+}
+.box1-content{
+    /* border: 2px solid green; */
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    text-align: center;
+    z-index: 2;
+    transition: all 0.6s ease-in-out;
+}
+.box1:hover .box1-content{
+    opacity: 1;
+    left: 50%;
+}
+.btn1{
+    display: inline-block;
+    text-decoration: none;
+    background: #454545;
+    color: #fff;
+    padding: 0.5em 1.2em;
+    margin-top: 0.8rem;
+    transition: all 0.4s ease-in;
+}
+.btn1:hover{
+    background: #232323;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+}
+.box1::after{
+    content: "";
+    /* border: 4px solid purple; */
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.619);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+.box1:hover::after{
+    opacity: 1;
+}
+.box2{
+    position: relative;
+}
+.box2:hover .box1-content{
+    opacity: 1;
+    left: 50%;
+}
+.box2::after{
+    content: "";
+    /* border: 4px solid purple; */
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.619);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+.box2:hover::after{
+    opacity: 1;
+}
+.box3{
+    position: relative;
+}
+.box3:hover .box1-content{
+    opacity: 1;
+    left: 50%;
+}
+.box3::after{
+    content: "";
+    /* border: 4px solid purple; */
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.619);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+.box3:hover::after{
+    opacity: 1;
+}
+.box4{
+    position: relative;
+}
+.box4:hover .box1-content{
+    opacity: 1;
+    left: 50%;
+}
+.box4::after{
+    content: "";
+    /* border: 4px solid purple; */
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.619);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+.box4:hover::after{
+    opacity: 1;
+}
+.box5{
+    position: relative;
+}
+.box5:hover .box1-content{
+    opacity: 1;
+    left: 50%;
+}
+.box5::after{
+    content: "";
+    /* border: 4px solid purple; */
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.619);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+.box5:hover::after{
+    opacity: 1;
+}
+.box6{
+    position: relative;
+}
+.box6:hover .box1-content{
+    opacity: 1;
+    left: 50%;
+}
+.box6::after{
+    content: "";
+    /* border: 4px solid purple; */
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.619);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+.box6:hover::after{
+    opacity: 1;
+}
+/* ############################################ Service styling ################################################    */
+.firm-header2{
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../IMG/Our-Services2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.container1{
+    /* border: 2px solid green; */
+    padding-bottom: 5rem;
+}
+.container1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container1 .img-box{
+    /* border: 2px solid red; */
+    float: left;
+    width: 70%;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.47);   
+}
+.container1 .img-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.container1 .text-box{
+    float: right;
+    width: 25%;
+    text-align: left;
+}
+.container1 .text-box h1{
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 3rem 0;
+    line-height: 1;
+}
+.container1 .text-box p{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.container1 .text-box li{
+    padding: 1rem 0;
+    font-size: 1.8em;
+    font-weight: 900;
+    list-style-type: circle;
+}
+.container2{
+    background: rgb(239, 236, 236);
+}
+.container2 h1{
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.container2 p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 2rem 0;
+}
+.container2 img{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 2rem;
+}
+/* ################################# Contact styling ############################################################### */
+.contact-form{
+    padding: 5rem 0;
+    /* font-size: 2rem; */
+    background: #f7f7f7;   
+}
+.form-wrapper{
+    /* border: 10px solid red; */
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.432);
+}
+.form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form-wrapper .company-address{
+    height: 760px;
+    background: #fff;
+    /* border: 4px dotted green; */
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-address img{
+    width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+.form-wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    background: #fff;
+    /* border: 4px dotted black; */
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+.form h1::after{
+    content: "";
+    width: 100%;
+    display: block;
+    border: 3px solid red;
+}
+.form-wrapper .form{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: "*";
+    color: red;
+
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: red;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
